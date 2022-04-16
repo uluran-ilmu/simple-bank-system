@@ -1,4 +1,6 @@
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class BankApp {
     private JPanel Canvas;
@@ -11,11 +13,25 @@ public class BankApp {
     private JLabel LoginView_Lbl_ID;
     private JLabel LoginView_Lbl_Password;
 
-    public static void main(String[] args) {
+    public BankApp() {
         JFrame frame = new JFrame("BankApp");
-        frame.setContentPane(new BankApp().Canvas);
+        frame.setContentPane(Canvas);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);
+
+        LoginView_Btn_Register.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+        LoginView_Btn_Login.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                frame.dispose();
+                new BankAppMenu();
+            }
+        });
     }
 }

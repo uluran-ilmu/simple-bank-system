@@ -24,4 +24,12 @@ public class BankAppMenu {
     private JLabel BankMenu_LblWithdrawAmmount;
     private JLabel BankMenu_LblBalanceValue2;
     private JTable table1;
+
+    public BankAppMenu() {
+        JFrame frame = new JFrame("BankAppMenu");
+        frame.setContentPane(Canvas);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.pack();
+        frame.setVisible(true);
+    }
 }

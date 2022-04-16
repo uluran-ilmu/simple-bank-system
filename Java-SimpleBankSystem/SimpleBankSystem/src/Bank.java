@@ -13,7 +13,7 @@ public class Bank {
    Bank(String id, String name, String password, int deposit) {
         user = new User(id, name, password);
         Balance += deposit;
-    }
+   }
 
     Boolean validateUser(String id, String password) {
         if(user.getID().equals(id) && user.getPassword().equals(password)) {
