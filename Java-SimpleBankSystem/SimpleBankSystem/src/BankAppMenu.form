@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="BankAppMenu">
+  <grid id="27dc6" binding="Canvas" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="960" height="540"/>
+    </constraints>
+    <properties>
+      <background color="-328966"/>
+      <maximumSize width="960" height="540"/>
+      <minimumSize width="960" height="540"/>
+      <preferredSize width="960" height="540"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <tabbedpane id="dc0d6" binding="TabPaneBankMenu">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="200" height="200"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-328966"/>
+          <font size="18" style="1"/>
+          <foreground color="-16119281"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="c301a" binding="PnlAccount" layout-manager="GridLayoutManager" row-count="7" column-count="7" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="Account"/>
+            </constraints>
+            <properties>
+              <background color="-328966"/>
+              <maximumSize width="960" height="504"/>
+              <minimumSize width="960" height="504"/>
+              <preferredSize width="960" height="504"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="67b7f" class="javax.swing.JLabel" binding="BankMenu_LblId">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font size="24" style="1"/>
+                  <foreground color="-16119281"/>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <text value="ID"/>
+                </properties>
+              </component>
+              <component id="d901a" class="javax.swing.JLabel" binding="BanMenu_LblPassword">
+                <constraints>
+                  <grid row="3" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font size="24" style="1"/>
+                  <foreground color="-16119281"/>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <text value="Password"/>
+                </properties>
+              </component>
+              <component id="e82db" class="javax.swing.JLabel" binding="BankMenu_LblBalance">
+                <constraints>
+                  <grid row="5" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font size="24" style="1"/>
+                  <foreground color="-16119281"/>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <text value="Balance"/>
+                </properties>
+              </component>
+              <component id="a096b" class="javax.swing.JLabel" binding="BankMenu_LblPasswordValue">
+                <constraints>
+                  <grid row="3" column="4" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font size="24" style="1"/>
+                  <foreground color="-16119281"/>
+                  <text value="Text"/>
+                </properties>
+              </component>
+              <component id="264e9" class="javax.swing.JLabel" binding="BankMenu_LblBalanceValue">
+                <constraints>
+                  <grid row="5" column="4" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font size="24" style="1"/>
+                  <foreground color="-16119281"/>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <text value="Rp 1.000,00"/>
+                </properties>
+              </component>
+              <hspacer id="a5503">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <hspacer id="e7fec">
+                <constraints>
+                  <grid row="1" column="6" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <vspacer id="cf17">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+              <vspacer id="df3cf">
+                <constraints>
+                  <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+              <component id="9c6cc" class="javax.swing.JLabel" binding="BanMenu_LblIdValue">
+                <constraints>
+                  <grid row="1" column="4" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font size="24" style="1"/>
+                  <foreground color="-16119281"/>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <text value="1"/>
+                </properties>
+              </component>
+              <hspacer id="c769a">
+                <constraints>
+                  <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="80" height="-1"/>
+                    <preferred-size width="80" height="-1"/>
+                    <maximum-size width="80" height="-1"/>
+                  </grid>
+                </constraints>
+              </hspacer>
+              <vspacer id="7f7e5">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                    <minimum-size width="-1" height="48"/>
+                    <preferred-size width="-1" height="48"/>
+                    <maximum-size width="-1" height="48"/>
+                  </grid>
+                </constraints>
+              </vspacer>
+              <vspacer id="8a94e">
+                <constraints>
+                  <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                    <minimum-size width="-1" height="48"/>
+                    <preferred-size width="-1" height="48"/>
+                    <maximum-size width="-1" height="48"/>
+                  </grid>
+                </constraints>
+              </vspacer>
+            </children>
+          </grid>
+          <grid id="550f5" binding="PnlDeposit" layout-manager="GridLayoutManager" row-count="7" column-count="6" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="Deposit"/>
+            </constraints>
+            <properties>
+              <background color="-328966"/>
+              <maximumSize width="960" height="504"/>
+              <minimumSize width="960" height="504"/>
+              <preferredSize width="960" height="504"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="a99f9" class="javax.swing.JLabel" binding="BankMenu_LblBalance1">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font size="24" style="1"/>
+                  <foreground color="-16119281"/>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <text value="Balance"/>
+                </properties>
+              </component>
+              <component id="a87f1" class="javax.swing.JLabel" binding="BankMenu_LblDepositAmmount">
+                <constraints>
+                  <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font size="24" style="1"/>
+                  <foreground color="-16119281"/>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <text value="Deposit Ammount"/>
+                </properties>
+              </component>
+              <component id="6c14" class="javax.swing.JButton" binding="BankMenu_BtnDeposit">
+                <constraints>
+                  <grid row="5" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-16119281"/>
+                  <font size="18" style="1"/>
+                  <foreground color="-328966"/>
+                  <text value="Confirm"/>
+                </properties>
+              </component>
+              <component id="eff92" class="javax.swing.JLabel" binding="BankMenu_LblBalanceValue1">
+                <constraints>
+                  <grid row="1" column="3" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font size="24" style="1"/>
+                  <foreground color="-16119281"/>
+                  <horizontalAlignment value="0"/>
+                  <horizontalTextPosition value="0"/>
+                  <text value="Rp 1.000,00"/>
+                </properties>
+              </component>
+              <hspacer id="d7138">
+                <constraints>
+                  <grid row="1" column="5" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <hspacer id="13481">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <vspacer id="71eaf">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+              <vspacer id="72829">
+                <constraints>
+                  <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+              <vspacer id="b663d">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                    <minimum-size width="-1" height="48"/>
+                    <preferred-size width="-1" height="48"/>
+                    <maximum-size width="-1" height="48"/>
+                  </grid>
+                </constraints>
+              </vspacer>
+              <vspacer id="befb4">
+                <constraints>
+                  <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+              <hspacer id="8e31b">
+                <constraints>
+                  <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="80" height="-1"/>
+                    <preferred-size width="80" height="-1"/>
+                    <maximum-size width="80" height="-1"/>
+                  </grid>
+                </constraints>
+              </hspacer>
+              <component id="66cc2" class="javax.swing.JTextField" binding="BankMenu_TxtFieldDeposit">
+                <constraints>
+                  <grid row="3" column="3" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <font size="24" style="1"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="aa9e2" binding="PnlWithdraw" layout-manager="GridLayoutManager" row-count="7" column-count="6" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="Withdraw"/>
+            </constraints>
+            <properties>
+              <background color="-328966"/>
+              <maximumSize width="960" height="504"/>
+              <minimumSize width="960" height="504"/>
+              <preferredSize width="960" height="504"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="6fa93" class="javax.swing.JLabel" binding="BankMenu_LblBalance2">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font size="24" style="1"/>
+                  <foreground color="-16119281"/>
+                  <text value="Balance"/>
+                </properties>
+              </component>
+              <component id="e1708" class="javax.swing.JLabel" binding="BankMenu_LblWithdrawAmmount">
+                <constraints>
+                  <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font size="24" style="1"/>
+                  <foreground color="-16119281"/>
+                  <text value="Withdraw Ammount"/>
+                </properties>
+              </component>
+              <component id="741da" class="javax.swing.JButton" binding="BankMenu_BtnWithdraw">
+                <constraints>
+                  <grid row="5" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-16119281"/>
+                  <font size="18" style="1"/>
+                  <foreground color="-328966"/>
+                  <text value="Confirm"/>
+                </properties>
+              </component>
+              <component id="5dee5" class="javax.swing.JLabel" binding="BankMenu_LblBalanceValue2">
+                <constraints>
+                  <grid row="1" column="3" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font size="24" style="1"/>
+                  <foreground color="-16119281"/>
+                  <text value="Rp 1.000,00"/>
+                </properties>
+              </component>
+              <component id="c9f75" class="javax.swing.JTextField" binding="BankMenu_TxtFieldWithdraw">
+                <constraints>
+                  <grid row="3" column="3" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <font size="24" style="1"/>
+                </properties>
+              </component>
+              <hspacer id="2223">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <hspacer id="73665">
+                <constraints>
+                  <grid row="1" column="5" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <vspacer id="f633e">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+              <vspacer id="97455">
+                <constraints>
+                  <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+              <vspacer id="3a090">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                    <minimum-size width="-1" height="48"/>
+                    <preferred-size width="-1" height="48"/>
+                    <maximum-size width="-1" height="48"/>
+                  </grid>
+                </constraints>
+              </vspacer>
+              <vspacer id="7efda">
+                <constraints>
+                  <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+              <hspacer id="a5923">
+                <constraints>
+                  <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="80" height="-1"/>
+                    <preferred-size width="80" height="-1"/>
+                    <maximum-size width="80" height="-1"/>
+                  </grid>
+                </constraints>
+              </hspacer>
+            </children>
+          </grid>
+          <grid id="b68e4" binding="PnlHistory" layout-manager="GridLayoutManager" row-count="3" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="History"/>
+            </constraints>
+            <properties>
+              <background color="-328966"/>
+              <maximumSize width="960" height="504"/>
+              <minimumSize width="960" height="504"/>
+              <preferredSize width="960" height="504"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="5a6b2" class="javax.swing.JTable" binding="table1" default-binding="true">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="50"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <vspacer id="7205e">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+              <vspacer id="1c2fb">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+              <hspacer id="1b1f3">
+                <constraints>
+                  <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <hspacer id="98d64">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+            </children>
+          </grid>
+        </children>
+      </tabbedpane>
+      <hspacer id="f6bbb">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <vspacer id="54c03">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+    </children>
+  </grid>
+</form>
