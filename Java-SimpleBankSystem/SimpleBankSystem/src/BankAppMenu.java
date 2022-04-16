@@ -1,4 +1,6 @@
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class BankAppMenu {
     private JPanel Canvas;
@@ -31,5 +33,23 @@ public class BankAppMenu {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);
+
+        //Set ID, Balance, Password of the account
+
+
+        BankMenu_BtnDeposit.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                //Update balance
+
+            }
+        });
+        BankMenu_BtnWithdraw.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                //Update balance
+
+            }
+        });
     }
 }

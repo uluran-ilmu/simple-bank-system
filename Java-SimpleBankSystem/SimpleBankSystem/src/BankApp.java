@@ -23,12 +23,14 @@ public class BankApp {
         LoginView_Btn_Register.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                frame.dispose();
+                new RegisterMenu();
             }
         });
         LoginView_Btn_Login.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                //Cek if account exist, if yes... Go to bank menu
                 frame.dispose();
                 new BankAppMenu();
             }
