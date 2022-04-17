@@ -9,23 +9,26 @@ public class BankAppMenu {
     private JPanel PnlDeposit;
     private JPanel PnlWithdraw;
     private JPanel PnlHistory;
-    private JLabel BankMenu_LblId;
-    private JLabel BanMenu_LblIdValue;
-    private JLabel BanMenu_LblPassword;
-    private JLabel BankMenu_LblBalance;
-    private JLabel BankMenu_LblPasswordValue;
-    private JLabel BankMenu_LblBalanceValue;
-    private JButton BankMenu_BtnDeposit;
-    private JLabel BankMenu_LblBalance1;
-    private JLabel BankMenu_LblDepositAmmount;
-    private JLabel BankMenu_LblBalanceValue1;
-    private JTextField BankMenu_TxtFieldDeposit;
-    private JButton BankMenu_BtnWithdraw;
-    private JTextField BankMenu_TxtFieldWithdraw;
-    private JLabel BankMenu_LblBalance2;
-    private JLabel BankMenu_LblWithdrawAmmount;
-    private JLabel BankMenu_LblBalanceValue2;
+    private JLabel LblId;
+    private JLabel LblIdValue;
+    private JLabel LblPassword;
+    private JLabel LblBalance;
+    private JLabel LblPasswordValue;
+    private JLabel LblBalanceValue;
+    private JButton BtnDeposit;
+    private JLabel LblBalance1;
+    private JLabel LblDepositAmmount;
+    private JLabel LblBalanceValue1;
+    private JTextField TxtFieldDeposit;
+    private JButton BtnWithdraw;
+    private JTextField TxtFieldWithdraw;
+    private JLabel LblBalance2;
+    private JLabel LblWithdrawAmmount;
+    private JLabel LblBalanceValue2;
     private JTable table1;
+    private JButton BtnLogOut;
+    private JLabel LblNameValue;
+    private JLabel LblName;
 
     public BankAppMenu() {
         JFrame frame = new JFrame("BankAppMenu");
@@ -34,21 +37,35 @@ public class BankAppMenu {
         frame.pack();
         frame.setVisible(true);
 
+        MyApp myApp = new MyApp();
+        System.out.println("Bank Menu ID: " + myApp.getCurrentId());
+
         //Set ID, Balance, Password of the account
+        LblIdValue.setText(String.valueOf(myApp.getCurrentId()));
+        LblNameValue.setText(myApp.bank[myApp.getCurrentId()].user.getName());
+        LblPasswordValue.setText(myApp.bank[myApp.getCurrentId()].user.getPassword());
+        LblBalanceValue.setText(String.valueOf(myApp.bank[myApp.getCurrentId()].getBalance()));
 
-
-        BankMenu_BtnDeposit.addActionListener(new ActionListener() {
+        BtnDeposit.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 //Update balance
 
             }
         });
-        BankMenu_BtnWithdraw.addActionListener(new ActionListener() {
+        BtnWithdraw.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 //Update balance
 
+            }
+        });
+        BtnLogOut.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                myApp.setCurrentId(0);
+                frame.dispose();
+                new BankApp();
             }
         });
     }
