@@ -3,6 +3,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class BankAppMenu {
+    private JFrame frame;
     private JPanel Canvas;
     private JTabbedPane TabPaneBankMenu;
     private JPanel PnlAccount;
@@ -31,42 +32,38 @@ public class BankAppMenu {
     private JLabel LblName;
 
     public BankAppMenu() {
-        JFrame frame = new JFrame("BankAppMenu");
+        frame = new JFrame("BankAppMenu");
         frame.setContentPane(Canvas);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);
 
-        MyApp myApp = new MyApp();
-        System.out.println("Bank Menu ID: " + myApp.getCurrentId());
-
         //Set ID, Balance, Password of the account
-        LblIdValue.setText(String.valueOf(myApp.getCurrentId()));
-        LblNameValue.setText(myApp.bank[myApp.getCurrentId()].user.getName());
-        LblPasswordValue.setText(myApp.bank[myApp.getCurrentId()].user.getPassword());
-        LblBalanceValue.setText(String.valueOf(myApp.bank[myApp.getCurrentId()].getBalance()));
+        initComponents();
 
-        BtnDeposit.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                //Update balance
+        BtnDeposit.addActionListener((event)->onDepositActionPerformed());
+        BtnWithdraw.addActionListener((event)->onWithdrawActionPerformed());
+        BtnLogOut.addActionListener((event)->onLogoutActionPerformed());
+    }
 
-            }
-        });
-        BtnWithdraw.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                //Update balance
+    public void initComponents() {
+        LblIdValue.setText("" + MyApp.currentUser.getId());
+        LblNameValue.setText(MyApp.currentUser.getName());
+        LblPasswordValue.setText(MyApp.currentUser.getPassword());
+        LblBalanceValue.setText("" + MyApp.currentUser.getBank().getBalance());
+    }
 
-            }
-        });
-        BtnLogOut.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                myApp.setCurrentId(0);
-                frame.dispose();
-                new BankApp();
-            }
-        });
+    public void onDepositActionPerformed() {
+
+    }
+
+    public void onWithdrawActionPerformed() {
+
+    }
+
+    public void onLogoutActionPerformed() {
+        MyApp.currentUser = null;
+        frame.dispose();
+        new Login();
     }
 }
