@@ -1,7 +1,6 @@
 package DataStructure;
 
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Date;
 
 public class HistoryEntry {
