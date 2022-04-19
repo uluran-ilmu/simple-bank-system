@@ -6,16 +6,18 @@ public class Bank {
 
     public void deposit(int amount){
         balance += amount;
+        history.createEntry(balance, amount);
     }
 
     public void withdraw(int amount) {
         if (canWithdraw(amount)) {
             balance -= amount;
+            history.createEntry(balance, -amount);
         }
     }
 
     public boolean canWithdraw(int amount) {
-        return(balance - amount > 0);
+        return(balance - amount >= 0);
     }
 
     public int getBalance() {

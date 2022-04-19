@@ -1,5 +1,7 @@
 package DataStructure;
 
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 
 public class HistoryEntry {
@@ -35,5 +37,19 @@ public class HistoryEntry {
 
     public void setTimestamp(Date timestamp) {
         this.timestamp = timestamp;
+    }
+
+    public String[] getStringEntry() {
+        String[] list = new String[3];
+        SimpleDateFormat dateFormat = new SimpleDateFormat("E, dd MMM yyyy HH:mm:ss z");
+        list[0] = "" + balance;
+        if (mutation > 0) {
+            list[1] = "+" + mutation;
+        }
+        else {
+            list[1] = "" + mutation;
+        }
+        list[2] = dateFormat.format(timestamp);
+        return list;
     }
 }
