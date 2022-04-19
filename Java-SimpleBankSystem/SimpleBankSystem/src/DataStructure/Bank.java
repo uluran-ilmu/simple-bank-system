@@ -15,7 +15,7 @@ public class Bank {
     }
 
     public boolean canWithdraw(int amount) {
-        return(balance - amount > 0);
+        return(balance - amount >= 0);
     }
 
     public int getBalance() {

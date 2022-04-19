@@ -1,6 +1,4 @@
 import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 public class BankAppMenu {
     private JFrame frame;
@@ -39,26 +37,56 @@ public class BankAppMenu {
         frame.setVisible(true);
 
         //Set ID, Balance, Password of the account
-        initComponents();
+        updateLabels();
 
         BtnDeposit.addActionListener((event)->onDepositActionPerformed());
         BtnWithdraw.addActionListener((event)->onWithdrawActionPerformed());
         BtnLogOut.addActionListener((event)->onLogoutActionPerformed());
     }
 
-    public void initComponents() {
+    public void updateLabels() {
         LblIdValue.setText("" + MyApp.currentUser.getId());
         LblNameValue.setText(MyApp.currentUser.getName());
         LblPasswordValue.setText(MyApp.currentUser.getPassword());
         LblBalanceValue.setText("" + MyApp.currentUser.getBank().getBalance());
+        LblBalanceValue1.setText("" + MyApp.currentUser.getBank().getBalance());
+        LblBalanceValue2.setText("" + MyApp.currentUser.getBank().getBalance());
     }
 
     public void onDepositActionPerformed() {
+        int mutationValue;
 
+        mutationValue = Integer.parseInt(TxtFieldDeposit.getText());
+        int result = JOptionPane.showConfirmDialog(null,
+                "Apakah Anda yakin dengan jumlah deposit?",
+                "Konfirmasi deposit", JOptionPane.YES_NO_OPTION);
+
+        if (result == JOptionPane.YES_OPTION) {
+            MyApp.currentUser.getBank().deposit(mutationValue);
+            JOptionPane.showMessageDialog(null, "Deposit berhasil");
+            updateLabels();
+        }
     }
 
     public void onWithdrawActionPerformed() {
+        int mutationValue;
 
+        mutationValue = Integer.parseInt(TxtFieldWithdraw.getText());
+
+        if (!MyApp.currentUser.getBank().canWithdraw(mutationValue)) {
+            JOptionPane.showMessageDialog(null, "Saldo tidak mencukupi!");
+        }
+        else {
+            int result = JOptionPane.showConfirmDialog(null,
+                    "Apakah Anda yakin dengan jumlah penaerikan?",
+                    "Konfirmasi penarikan", JOptionPane.YES_NO_OPTION);
+
+            if (result == JOptionPane.YES_OPTION) {
+                MyApp.currentUser.getBank().withdraw(mutationValue);
+                JOptionPane.showMessageDialog(null, "Penarikan berhasil");
+                updateLabels();
+            }
+        }
     }
 
     public void onLogoutActionPerformed() {
